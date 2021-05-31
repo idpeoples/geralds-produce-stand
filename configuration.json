@@ -1,0 +1,23 @@
+{
+
+    "database": {
+
+        "credentials": {
+
+            "name": "bananas",
+            "username": "bananas_user",
+            "password": "example"
+
+        },
+        "schema": {
+
+            "table name": "produce_tracker",
+            "id": "produce_id",
+            "name": "produce_name",
+            "count": "produce_count"
+
+        }
+
+    }
+
+}
