@@ -28,6 +28,7 @@ def main():
         connection.autocommit = True
         cursor = connection.cursor()
 
+        # Using formatted strings because the cursor won't accept the table name as a prepared statement
         create_table_query = "create table {:s} ({:s} int unsigned not null primary key auto_increment, {:s} text not null, {:s} int unsigned not null)"
         create_table_query = create_table_query.format(schema['table name'], schema['id'], schema['name'], schema['count'])
         cursor.execute(create_table_query)
