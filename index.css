@@ -1,7 +1,27 @@
+@keyframes autoplay {
+
+    0% {opacity: 0.0}
+    4% {opacity: 1.0}
+    33.33% {opacity: 1.0}
+    37.33% {opacity: 0.0}
+    100% {opacity: 0.0}
+
+}
+
 body {
 
     background-color: #fffdfa;
     font-family: sans-serif;
+
+}
+
+.card {
+
+    animation: 12s autoplay infinite linear;
+    opacity: 0.0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 
 }
 
@@ -10,6 +30,30 @@ body {
     margin-left: 20%;
     margin-right: 20%;
     text-align: center;
+
+}
+
+#deck {
+
+    position: relative;
+
+}
+
+#deck > *:nth-child(1) {
+
+    animation-delay: 0s;
+
+}
+
+#deck > *:nth-child(2) {
+
+    animation-delay: 4s;
+
+}
+
+#deck > *:nth-child(3) {
+
+    animation-delay: 8s;
 
 }
 
@@ -41,6 +85,21 @@ h1 {
     display: flex;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+
+}
+
+p {
+
+    color: #dde1d5;
+    font-size: 2.5em;
+    font-weight: bold;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #151b0c;
+    width: 100%;
 
 }
 

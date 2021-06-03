@@ -33,6 +33,14 @@
 
         <div id="carousel" class="content">
 
+            <div id="deck">
+
+                <div class="card"><img src="fruitstand1.jpg"><p>"Always fresh!" - Al Fresco</p></div>
+                <div class="card"><img src="fruitstand2.jpg"><p>"Huge variety!" - Manny Fold</p></div>
+                <div class="card"><img src="fruitstand3.jpg"><p>"Excellent prices!" - P. Pincher</p></div>
+
+            </div>
+
         </div>
 
     </body>
