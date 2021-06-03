@@ -1,0 +1,79 @@
+body {
+
+    background-color: #fffdfa;
+    font-family: sans-serif;
+
+}
+
+.content {
+
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+
+}
+
+div h2 {
+
+    margin: auto;
+
+}
+
+h1 {
+
+    font-size: 3em;
+    font-weight: normal;
+
+}
+
+#page-title {
+
+    background-color: DarkOliveGreen;
+    color: #dde1d5;
+    font-family: "Avantgarde", "TeX Gyre Adventor", "URW Gothic L", sans-serif;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+}
+
+#navbar {
+
+    display: flex;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+}
+
+table {
+
+    width: 100%;
+
+}
+
+td {
+
+    color: #151b0c;
+    margin: auto;
+    padding: 0.5em;
+    text-align: center;
+    vertical-align: middle;
+    width: 33%;
+
+}
+
+td:nth-child(1) {
+
+    background-color: #809063;
+}
+
+td:nth-child(2) {
+
+    background-color: #aab597;
+
+}
+
+td:nth-child(3) {
+
+    background-color: #d4dacb;
+
+}
