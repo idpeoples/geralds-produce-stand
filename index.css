@@ -19,6 +19,7 @@ body {
 
     animation: 12s autoplay infinite linear;
     opacity: 0.0;
+    overflow: hidden;
     position: absolute;
     text-align: center;
     width: 100%;
