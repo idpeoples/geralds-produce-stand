@@ -19,6 +19,14 @@
 
         }
 
+    },
+
+    "contact": {
+
+        "from email": "username@example.com",
+        "to email": "otherusername@example.com",
+        "name": "Someone"
+
     }
 
 }
