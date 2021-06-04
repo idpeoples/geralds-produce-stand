@@ -14,6 +14,7 @@
             "table name": "produce_tracker",
             "id": "produce_id",
             "name": "produce_name",
+            "display name": "produce_display_name",
             "count": "produce_count"
 
         }
