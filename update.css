@@ -32,5 +32,6 @@ form > *:last-child {
 .product_update > * {
 
     display: table-cell;
+    width: 25%;
 
 }
