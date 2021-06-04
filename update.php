@@ -72,12 +72,10 @@
 
             }
 
-            echo $message;
             $headers = array('From' => $config['contact']['from email'],
                              'Reply-To' => $config['contact']['from email'],
                              'X-Mailer' => 'PHP/' . phpversion());
             $mail_result = mail($config['contact']['to email'], 'Missing Items', $message, $headers, '-f'.$config['contact']['from email']);
-            echo "mail sent: ".$mail_result;
 
         }
 
