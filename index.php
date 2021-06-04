@@ -22,9 +22,9 @@
 
                 <tr>
 
-                    <td><div><h2>Home</h2></div></td>
-                    <td><div><h2>Stock</h2></div></td>
-                    <td><div><h2>Updates</h2></div></td>
+                    <td><div><h2><a href="index.php">Home</a></h2></div></td>
+                    <td><div><h2><a href="stock.php">Stock</a></h2></div></td>
+                    <td><div><h2><a href="update.php">Updates</a></h2></div></td>
 
                 </tr>
 
