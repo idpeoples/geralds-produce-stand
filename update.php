@@ -36,9 +36,9 @@
                     $newValue = $current + $change;
 
                 } elseif ($sign === 'sell') {
-                    $newValue = ($current > $change) ? ($current - $change) : 0;
 
                     $newValue = ($current > $change) ? ($current - $change) : 0;
+
                 }
 
                 $statement = $dbconn->prepare('update '.$schema['table name'].' set '.$schema['count'].' = :newValue where '.$schema['id'].' = :produce_id');
