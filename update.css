@@ -1,1 +1,36 @@
-@import "index.css"
+@import "index.css";
+
+form > *:last-child {
+
+    margin-left: 45%;
+    margin-right: 45%;
+    width: 10%;
+
+}
+
+#produce-update-container {
+
+    display: table;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    width: 60%;
+
+}
+
+#produce-update-container > *:nth-child(1) {
+
+    font-weight: bold;
+
+}
+
+.product_update {
+
+    display: table-row;
+
+}
+
+.product_update > * {
+
+    display: table-cell;
+
+}

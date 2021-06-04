@@ -156,6 +156,7 @@
 
                 <?php
 
+                    echo '<div class="product_update"><div>Name</div><div>Current Count</div><div>Action</div><div>Amount</div></div>';
                     $queryString = 'select * from '.$schema['table name'];
                     $queryStatement = $dbconn->query($queryString);
                     $results = $queryStatement->execute();
