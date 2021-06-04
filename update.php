@@ -116,6 +116,7 @@
 
 ?>
 
+<!DOCTYPE html>
 <html>
 
     <head>
