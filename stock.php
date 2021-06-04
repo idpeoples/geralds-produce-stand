@@ -1,5 +1,6 @@
 <?php
 
+    // extract the configuration data from the JSON file and separate it into two objects for ease of use
     $configFileString = file_get_contents("./configuration/configuration.json");
     $config = json_decode($configFileString, true);
     $credentials = $config['database']['credentials'];
@@ -18,6 +19,7 @@
 
     $dbconn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_SILENT);
 
+    // check the POST data, if it exists, then we need to do an insert to display it on the page immediately
     if (isset($_POST['basic_name']) && isset($_POST['display_name']) && isset($_POST['initial_count'])) {
 
         $statement = $dbconn->prepare('insert into '.$schema['table name'].' values (NULL, :basic_name, :display_name, :count)');
@@ -28,6 +30,8 @@
 
     }
 
+    // Generate a listing div from the parameters $produce (the actual data) and
+    // $schema, which holds the indices for $produce as well as the column names to use
     function generateListing($schema, $produce) {
 
         $listing = '<div class="produce-listing">';
@@ -50,6 +54,7 @@
 
     }
 
+    // Used by generateListing to create the inner divs easily
     function generateListingDiv($section, $produce) {
 
         return '<div class='.$section.'>'.$produce[$section].'</div>';
@@ -97,9 +102,11 @@
 
             <?php
 
+                // This is a bit of a trick I came up with, it uses the generative functions to generate the table header
                 $listing_header = array($schema['id']=>'ID', $schema['display name']=>'Name', $schema['count']=>'Count');
                 echo generateListing($schema, $listing_header);
 
+                // This is a pre-written query with no user input, therefore no need to used a prepared statement
                 $queryString = "select * from ".$schema['table name'];
                 $queryStatement = $dbconn->query($queryString);
                 $results = $queryStatement->execute();
