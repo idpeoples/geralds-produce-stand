@@ -1,19 +1,9 @@
 @keyframes autoplay {
-  0% {
-    opacity: 0;
-  }
-  4% {
-    opacity: 1;
-  }
-  33.33% {
-    opacity: 1;
-  }
-  37.33% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+  0% { opacity: 0; }
+  4% { opacity: 1; }
+  33.33% { opacity: 1; }
+  37.33% { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 a {
