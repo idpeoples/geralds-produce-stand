@@ -131,8 +131,8 @@
 
             <form method="POST">
 
-                <input type="text" name="basic name" placeholder="Basic Name ('orange')" />
-                <input type="text" name="display name" placeholder="Display Name ('Oranges')" />
+                <input type="text" name="basic name" placeholder="Basic Name ('orange')" required />
+                <input type="text" name="display name" placeholder="Display Name ('Oranges')" required />
                 <input type="number" name="initial count" placeholder="Initial Count" min="1" />
                 <input type="submit" value="Add Product"/>
 
