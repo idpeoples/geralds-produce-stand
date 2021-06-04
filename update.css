@@ -23,13 +23,13 @@ form > *:last-child {
 
 }
 
-.product_update {
+.produce_update {
 
     display: table-row;
 
 }
 
-.product_update > * {
+.produce_update > * {
 
     display: table-cell;
     width: 25%;

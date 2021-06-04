@@ -6,14 +6,14 @@
 
 }
 
-.product_listing {
+.produce_listing {
 
     display: table-row;
     width: 100%;
 
 }
 
-#product_listing_container {
+#produce_listing_container {
 
     display: table;
     margin-top: 2em;
@@ -21,13 +21,14 @@
 
 }
 
-#product_listing_container > *:nth-child(1) {
+#produce_listing_container > *:nth-child(1) {
 
     font-weight: bold;
+    margin-bottom: 1em;
 
 }
 
-.product_listing > * {
+.produce_listing > * {
 
     display: table-cell;
     width: 33%;

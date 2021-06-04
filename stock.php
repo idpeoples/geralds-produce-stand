@@ -28,9 +28,9 @@
 
     }
 
-    function generateListing($schema, $product) {
+    function generateListing($schema, $produce) {
 
-        $listing = '<div class="product_listing">';
+        $listing = '<div class="produce_listing">';
 
         foreach ($schema as $section) {
 
@@ -38,7 +38,7 @@
                 || $section === $schema['display name']
                 || $section === $schema['count']) {
 
-                $listing .= generateListingDiv($section, $product);
+                $listing .= generateListingDiv($section, $produce);
 
             }
 
@@ -50,9 +50,9 @@
 
     }
 
-    function generateListingDiv($section, $product) {
+    function generateListingDiv($section, $produce) {
 
-        return '<div class='.$section.'>'.$product[$section].'</div>';
+        return '<div class='.$section.'>'.$produce[$section].'</div>';
 
     }
 
@@ -92,7 +92,7 @@
 
         </div>
 
-        <div id="product_listing_container" class="content">
+        <div id="produce_listing_container" class="content">
 
             <?php
 

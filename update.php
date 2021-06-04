@@ -24,10 +24,10 @@
 
             if ($_POST[$key] != "") {
 
-                $product_id = strtok($key, '_');
-                $sign = $_POST[$product_id.'_buy_or_sell'];
-                $current = intval($_POST[$product_id.'_current']);
-                $change = intval($_POST[$product_id.'_change']);
+                $produce_id = strtok($key, '_');
+                $sign = $_POST[$produce_id.'_buy_or_sell'];
+                $current = intval($_POST[$produce_id.'_current']);
+                $change = intval($_POST[$produce_id.'_change']);
 
                 $newValue = 0;
 
@@ -41,9 +41,9 @@
 
                 }
 
-                $statement = $dbconn->prepare('update '.$schema['table name'].' set '.$schema['count'].' = :newValue where '.$schema['id'].' = :product_id');
+                $statement = $dbconn->prepare('update '.$schema['table name'].' set '.$schema['count'].' = :newValue where '.$schema['id'].' = :produce_id');
                 $statement->bindParam(':newValue', $newValue);
-                $statement->bindParam(':product_id', $product_id);
+                $statement->bindParam(':produce_id', $produce_id);
                 $statement->execute();
 
             }
@@ -65,9 +65,9 @@
             $message = 'Hello '.$config['contact']['name'].','."\r\n\r\n".'This message is to inform you that the following items have run out:'."\r\n";
             $comma = '';
 
-            foreach ($resultsArray as $product) {
+            foreach ($resultsArray as $produce) {
 
-                $message .= $comma.$product[$schema['display name']]."\r\n";
+                $message .= $comma.$produce[$schema['display name']]."\r\n";
                 $comma = ', ';
 
             }
@@ -81,26 +81,26 @@
 
     }
 
-    function generateUpdate($schema, $product) {
+    function generateUpdate($schema, $produce) {
 
-        $update = '<div class="product_update">';
+        $update = '<div class="produce_update">';
 
         foreach ($schema as $section) {
 
             if ($section === $schema['display name']
                 || $section === $schema['count']) {
 
-                $update .= generateUpdateDiv($section, $product);
+                $update .= generateUpdateDiv($section, $produce);
 
             }
 
         }
 
-        $update .= '<div><select name="'.$product[$schema['id']].'_buy_or_sell"><option value="buy">Bought</option><option value="sell">Sold</option></select></div>';
+        $update .= '<div><select name="'.$produce[$schema['id']].'_buy_or_sell"><option value="buy">Bought</option><option value="sell">Sold</option></select></div>';
 
-        $update .= '<div><input type="number" name="'.$product[$schema['id']].'_change" min="0" /></div>';
+        $update .= '<div><input type="number" name="'.$produce[$schema['id']].'_change" min="0" /></div>';
 
-        $update .= '<input type="hidden" name="'.$product[$schema['id']].'_current" value='.$product[$schema['count']].'>';
+        $update .= '<input type="hidden" name="'.$produce[$schema['id']].'_current" value='.$produce[$schema['count']].'>';
 
         $update .= '</div>';
 
@@ -108,9 +108,9 @@
 
     }
 
-    function generateUpdateDiv($section, $product) {
+    function generateUpdateDiv($section, $produce) {
 
-        return '<div class='.$section.'>'.$product[$section].'</div>';
+        return '<div class='.$section.'>'.$produce[$section].'</div>';
 
     }
 
@@ -156,7 +156,7 @@
 
                 <?php
 
-                    echo '<div class="product_update"><div>Name</div><div>Current Count</div><div>Action</div><div>Amount</div></div>';
+                    echo '<div class="produce_update"><div>Name</div><div>Current Count</div><div>Action</div><div>Amount</div></div>';
                     $queryString = 'select * from '.$schema['table name'];
                     $queryStatement = $dbconn->query($queryString);
                     $results = $queryStatement->execute();
