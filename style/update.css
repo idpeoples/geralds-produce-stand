@@ -22,6 +22,10 @@ form > *:last-child {
   font-weight: bold;
 }
 
+#produce-update-container > *:nth-child(2n) {
+  background-color: #e6e9e0;
+}
+
 .produce-update {
   display: table-row;
 }

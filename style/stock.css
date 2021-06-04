@@ -24,3 +24,7 @@
   font-weight: bold;
   margin-bottom: 1em;
 }
+
+#produce-listing-container > *:nth-child(2n) {
+  background-color: #e6e9e0;
+}
