@@ -30,7 +30,7 @@
                 $change = intval($_POST[$product_id.'_change']);
 
                 $newValue = 0;
-                
+
                 if ($sign === 'buy') {
 
                     $newValue = $current + $change;
@@ -55,10 +55,10 @@
     $queryString = 'select * from '.$schema['table name'].' where '.$schema['count'].' = 0';
     $queryStatement = $dbconn->query($queryString);
     $results = $queryStatement->execute();
-    
+
     if ($results) {
 
-        $resultsArray = $queryStatement->fetchAll();    
+        $resultsArray = $queryStatement->fetchAll();
 
         if (sizeof($resultsArray) > 0) {
 
