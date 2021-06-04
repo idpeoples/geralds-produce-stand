@@ -1,6 +1,6 @@
 <?php
 
-    $configFileString = file_get_contents("configuration.json");
+    $configFileString = file_get_contents("./configuration/configuration.json");
     $config = json_decode($configFileString, true);
     $credentials = $config['database']['credentials'];
     $schema = $config['database']['schema'];

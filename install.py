@@ -6,7 +6,7 @@ import json
 import mariadb
 import random
 
-CONFIGURATION_FILE = "./configuration.json"
+CONFIGURATION_FILE = "./configuration/configuration.json"
 
 # get_configuration: Extracts data from the json file, returning the main dictionary object
 def get_configuration():
