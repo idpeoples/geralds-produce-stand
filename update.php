@@ -102,6 +102,8 @@
 
         $update .= '<input type="hidden" name="'.$product[$schema['id']].'_current" value='.$product[$schema['count']].'>';
 
+        $update .= '</div>';
+
         return $update;
 
     }
