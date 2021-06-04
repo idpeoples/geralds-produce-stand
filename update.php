@@ -83,7 +83,7 @@
 
     function generateUpdate($schema, $produce) {
 
-        $update = '<div class="produce_update">';
+        $update = '<div class="produce-update">';
 
         foreach ($schema as $section) {
 
@@ -156,7 +156,7 @@
 
                 <?php
 
-                    echo '<div class="produce_update"><div>Name</div><div>Current Count</div><div>Action</div><div>Amount</div></div>';
+                    echo '<div class="produce-update"><div>Name</div><div>Current Count</div><div>Action</div><div>Amount</div></div>';
                     $queryString = 'select * from '.$schema['table name'];
                     $queryStatement = $dbconn->query($queryString);
                     $results = $queryStatement->execute();

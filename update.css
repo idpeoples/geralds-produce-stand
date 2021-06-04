@@ -23,15 +23,11 @@ form > *:last-child {
 
 }
 
-.produce_update {
-
-    display: table-row;
-
+.produce-update {
+  display: table-row;
 }
 
-.produce_update > * {
-
-    display: table-cell;
-    width: 25%;
-
+.produce-update > * {
+  display: table-cell;
+  width: 25%;
 }

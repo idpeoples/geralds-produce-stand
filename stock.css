@@ -6,14 +6,14 @@
 
 }
 
-.produce_listing {
+.produce-listing {
 
     display: table-row;
     width: 100%;
 
 }
 
-#produce_listing_container {
+#produce-listing-container {
 
     display: table;
     margin-top: 2em;
@@ -21,14 +21,14 @@
 
 }
 
-#produce_listing_container > *:nth-child(1) {
+#produce-listing-container > *:nth-child(1) {
 
     font-weight: bold;
     margin-bottom: 1em;
 
 }
 
-.produce_listing > * {
+.produce-listing > * {
 
     display: table-cell;
     width: 33%;

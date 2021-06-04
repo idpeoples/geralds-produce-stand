@@ -30,7 +30,7 @@
 
     function generateListing($schema, $produce) {
 
-        $listing = '<div class="produce_listing">';
+        $listing = '<div class="produce-listing">';
 
         foreach ($schema as $section) {
 
@@ -92,7 +92,7 @@
 
         </div>
 
-        <div id="produce_listing_container" class="content">
+        <div id="produce-listing-container" class="content">
 
             <?php
 
