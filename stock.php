@@ -82,7 +82,7 @@
 
                 <tr>
 
-                    <td><a href="/"><div><h2>Home</h2></div></a></td>
+                    <td><a href="/geralds-produce-stand/"><div><h2>Home</h2></div></a></td>
                     <td><a href="stock.php"><div><h2>Stock</h2></div></a></td>
                     <td><a href="update.php"><div><h2>Updates</h2></div></a></td>
 
