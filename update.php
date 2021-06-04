@@ -62,12 +62,12 @@
 
         if (sizeof($resultsArray) > 0) {
 
-            $message = 'Hello '.$config['contact']['name'].', this message is to inform you that the following items have run out:\r\n';
+            $message = 'Hello '.$config['contact']['name'].', this message is to inform you that the following items have run out:'."\r\n";
             $comma = '';
 
             foreach ($resultsArray as $product) {
 
-                $message .= $comma.$product[$schema['display name']].'\r\n';
+                $message .= $comma.$product[$schema['display name']]."\r\n";
                 $comma = ', ';
 
             }
