@@ -77,7 +77,7 @@
 
             foreach ($resultsArray as $produce) {
 
-                $message .= $comma.$produce[$schema['display name']]."\r\n";
+                $message .= $comma.$produce[$schema['display name']];
                 $comma = ', ';
 
             }
