@@ -3,7 +3,7 @@
     <head>
 
         <link rel="stylesheet" href="index.css">
-        <link rel="icon" href="apple.jpg">
+        <link rel="icon" href="images/apple.jpg">
         <title>Gerald's Produce Stand</title>
 
     </head>
@@ -36,9 +36,9 @@
 
             <div id="deck">
 
-                <div class="card"><img src="fruitstand1.jpg"><p>"Always fresh!" - Al Fresco</p></div>
-                <div class="card"><img src="fruitstand2.jpg"><p>"Huge variety!" - Manny Fold</p></div>
-                <div class="card"><img src="fruitstand3.jpg"><p>"Excellent prices!" - P. Pincher</p></div>
+                <div class="card"><img src="images/fruitstand1.jpg"><p>"Always fresh!" - Al Fresco</p></div>
+                <div class="card"><img src="images/fruitstand2.jpg"><p>"Huge variety!" - Manny Fold</p></div>
+                <div class="card"><img src="images/fruitstand3.jpg"><p>"Excellent prices!" - P. Pincher</p></div>
 
             </div>
 
