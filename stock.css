@@ -1,0 +1,35 @@
+@import "index.css";
+
+#form-container {
+
+    margin-top: 2em;
+
+}
+
+.product_listing {
+
+    display: table-row;
+    width: 100%;
+
+}
+
+#product_listing_container {
+
+    display: table;
+    margin-top: 2em;
+    width: 60%;
+
+}
+
+#product_listing_container > *:nth-child(1) {
+
+    font-weight: bold;
+
+}
+
+.product_listing > * {
+
+    display: table-cell;
+    width: 33%;
+
+}
