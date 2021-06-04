@@ -150,9 +150,9 @@
 
         </div>
 
-        <div id="produce-update-container" class="content">
+        <form method="POST">
 
-            <form method="POST">
+            <div id="produce-update-container" class="content">
 
                 <?php
 
@@ -174,11 +174,11 @@
 
                 ?>
 
-                <input type="submit" value="Update Product(s)" />
+            </div>
 
-            </form>
+            <input type="submit" value="Update Product(s)" />
 
-        </div>
+        </form>
 
     </body>
 
