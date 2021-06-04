@@ -1,33 +1,27 @@
 @import "index.css";
 
+.produce-update > * {
+  display: table-cell;
+  width: 25%;
+}
+
 form > *:last-child {
-
-    margin-left: 45%;
-    margin-right: 45%;
-    width: 10%;
-
+  margin-left: 45%;
+  margin-right: 45%;
+  width: 10%;
 }
 
 #produce-update-container {
-
-    display: table;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    width: 60%;
-
+  display: table;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  width: 60%;
 }
 
 #produce-update-container > *:nth-child(1) {
-
-    font-weight: bold;
-
+  font-weight: bold;
 }
 
 .produce-update {
   display: table-row;
-}
-
-.produce-update > * {
-  display: table-cell;
-  width: 25%;
 }

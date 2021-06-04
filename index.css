@@ -1,146 +1,109 @@
 @keyframes autoplay {
-
-    0% {opacity: 0.0}
-    4% {opacity: 1.0}
-    33.33% {opacity: 1.0}
-    37.33% {opacity: 0.0}
-    100% {opacity: 0.0}
-
+  0% { opacity: 0; }
+  4% { opacity: 1; }
+  33.33% { opacity: 1; }
+  37.33% { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 a {
-
-    color: inherit;
-    text-decoration: none;
-
+  color: inherit;
+  text-decoration: none;
 }
 
 body {
-
-    background-color: #fffdfa;
-    font-family: sans-serif;
-
+  background-color: #fffdfa;
+  font-family: sans-serif;
 }
 
 .card {
-
-    animation: 12s autoplay infinite linear;
-    opacity: 0.0;
-    overflow: hidden;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-
+  animation: 12s autoplay infinite linear;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 .content {
-
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: center;
-
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
 }
 
 #deck {
-
-    position: relative;
-
+  position: relative;
 }
 
 #deck > *:nth-child(1) {
-
-    animation-delay: 0s;
-
+  animation-delay: 0s;
 }
 
 #deck > *:nth-child(2) {
-
-    animation-delay: 4s;
-
+  animation-delay: 4s;
 }
 
 #deck > *:nth-child(3) {
-
-    animation-delay: 8s;
-
+  animation-delay: 8s;
 }
 
 div h2 {
-
-    margin: auto;
-
+  margin: auto;
 }
 
 h1 {
-
-    font-size: 3em;
-    font-weight: normal;
-
+  font-size: 3em;
+  font-weight: normal;
 }
 
 #page-title {
-
-    background-color: DarkOliveGreen;
-    color: #dde1d5;
-    font-family: "Avantgarde", "TeX Gyre Adventor", "URW Gothic L", sans-serif;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-
+  background-color: darkolivegreen;
+  color: #dde1d5;
+  font-family: "Avantgarde", "TeX Gyre Adventor", "URW Gothic L", sans-serif;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 #navbar {
-
-    display: flex;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-
+  display: flex;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 p {
-
-    color: #dde1d5;
-    font-size: 2.5em;
-    font-weight: bold;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #151b0c;
-    width: 100%;
-
+  color: #dde1d5;
+  font-size: 2.5em;
+  font-weight: bold;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #151b0c;
+  width: 100%;
 }
 
 table {
-
-    width: 100%;
-
+  width: 100%;
 }
 
 td {
-
-    color: #151b0c;
-    margin: auto;
-    padding: 0.5em;
-    text-align: center;
-    vertical-align: middle;
-    width: 33%;
-
+  color: #151b0c;
+  margin: auto;
+  padding: 0.5em;
+  text-align: center;
+  vertical-align: middle;
+  width: 33%;
 }
 
 td:nth-child(1) {
-
-    background-color: #809063;
+  background-color: #809063;
 }
 
 td:nth-child(2) {
-
-    background-color: #aab597;
-
+  background-color: #aab597;
 }
 
 td:nth-child(3) {
-
-    background-color: #d4dacb;
-
+  background-color: #d4dacb;
 }
