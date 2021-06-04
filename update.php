@@ -121,7 +121,7 @@
 
     <head>
 
-        <link rel="stylesheet" href="update.css">
+        <link rel="stylesheet" href="style/update.css">
         <link rel="icon" href="images/apple.jpg">
         <title>Updates - Gerald's Produce Stand</title>
 

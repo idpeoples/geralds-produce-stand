@@ -63,7 +63,7 @@
 
     <head>
 
-        <link rel="stylesheet" href="stock.css">
+        <link rel="stylesheet" href="style/stock.css">
         <link rel="icon" href="images/apple.jpg">
         <title>Stock - Gerald's Produce Stand</title>
 

@@ -3,7 +3,7 @@
 
     <head>
 
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="style/index.css">
         <link rel="icon" href="images/apple.jpg">
         <title>Gerald's Produce Stand</title>
 
