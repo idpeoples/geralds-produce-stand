@@ -67,6 +67,8 @@ If you want to use the email feature, make sure your webserver has a working mai
 
 Now the application should be set up! Check `[your url]/geralds-produce-stand`.
 
+### Running Locally
+
 You can also skip the Apache steps and run a local server just for testing. Navigate to the project directory, then run:
 ```
 php -S localhost:8000
