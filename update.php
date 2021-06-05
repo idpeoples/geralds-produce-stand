@@ -23,16 +23,16 @@
     foreach (array_keys($_POST) as $key) {
 
         // $_POST includes several keys which we don't need
-        if (strpos($key, 'change') != false) {
+        if (strpos(sanitizeInput($key), 'change') != false) {
 
             // verify that the key has data
-            if ($_POST[$key] != "") {
+            if (sanitizeInput($_POST[$key]) != "") {
 
                 // extract the other data from $_POST by using the produce_id stored in the key name
                 $produce_id = strtok($key, '_');
-                $sign = $_POST[$produce_id.'_buy_or_sell'];
-                $current = intval($_POST[$produce_id.'_current']);
-                $change = intval($_POST[$produce_id.'_change']);
+                $sign = sanitizeInput($_POST[$produce_id.'_buy_or_sell']);
+                $current = intval(sanitizeInput($_POST[$produce_id.'_current']));
+                $change = intval(sanitizeInput($_POST[$produce_id.'_change']));
 
                 $newValue = 0;
 
@@ -127,6 +127,22 @@
     function generateUpdateDiv($section, $produce) {
 
         return '<div class='.$section.'>'.$produce[$section].'</div>';
+
+    }
+
+    // used to prevent HTML/Script injection attacks
+    // replaces dangerous characters with HTML equivalents
+    function sanitizeInput($text) {
+
+        $replacements = array('<' => '&lt;', '>' => '&gt;', '&' => '&amp;', "\n" => '<br />');
+
+        foreach (array_keys($replacements) as $thorn) {
+
+            $text = str_replace($thorn, $replacements[$thorn], $text);
+
+        }
+
+        return $text;
 
     }
 

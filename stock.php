@@ -23,9 +23,12 @@
     if (isset($_POST['basic_name']) && isset($_POST['display_name']) && isset($_POST['initial_count'])) {
 
         $statement = $dbconn->prepare('insert into '.$schema['table name'].' values (NULL, :basic_name, :display_name, :count)');
-        $statement->bindParam(':basic_name', $_POST['basic_name']);
-        $statement->bindParam(':display_name', $_POST['display_name']);
-        $statement->bindParam(':count', $_POST['initial_count']);
+        $basicName = sanitizeInput($_POST['basic_name']);
+        $displayName = sanitizeInput($_POST['display_name']);
+        $initialCount = sanitizeInput($_POST['initial_count']);
+        $statement->bindParam(':basic_name', $basicName);
+        $statement->bindParam(':display_name', $displayName);
+        $statement->bindParam(':count', $initialCount);
         $statement->execute();
 
     }
@@ -58,6 +61,22 @@
     function generateListingDiv($section, $produce) {
 
         return '<div class='.$section.'>'.$produce[$section].'</div>';
+
+    }
+
+    // used to prevent HTML/Script injection attacks
+    // replaces dangerous characters with HTML equivalents
+    function sanitizeInput($text) {
+
+        $replacements = array('<' => '&lt;', '>' => '&gt;', '&' => '&amp;', "\n" => '<br />');
+
+        foreach (array_keys($replacements) as $thorn) {
+
+            $text = str_replace($thorn, $replacements[$thorn], $text);
+
+        }
+
+        return $text;
 
     }
 
