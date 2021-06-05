@@ -4,12 +4,12 @@ Live Site: https://ianpeoples.dev/geralds-produce-stand/
 A small web application that tracks the stock of various produce. Built using MySQL/Mariadb, Python 3, and PHP 7.
 
 ## Table of Contents:
-[Top](#geralds-produce-stand)  
-[Commentary](#commentary)  
-[Installation](#installation)  
-[Running Locally](#running-locally)  
-[Uninstallation](#uninstallation)  
-[Linting](#linting)
+1. [Top](#geralds-produce-stand)  
+2. [Commentary](#commentary)  
+3. [Installation](#installation)  
+4. [Running Locally](#running-locally)  
+5. [Uninstallation](#uninstallation)  
+6. [Linting](#linting)
 
 ### Commentary
 
