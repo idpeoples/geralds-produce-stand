@@ -70,3 +70,7 @@ Now the application should be set up! Check `[your url]/geralds-produce-stand`.
 ### Uninstallation
 
 Simply run `uninstall.sql` in the installation directory (make sure the information in it matches the other configuration files). That will delete the database and user from your server. From there you can delete the repository and that should do it!
+
+### Linting
+
+I have included files for linting with Prettier.io, as well Stylelint. Use them if you'd like!
