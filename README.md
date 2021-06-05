@@ -67,6 +67,12 @@ If you want to use the email feature, make sure your webserver has a working mai
 
 Now the application should be set up! Check `[your url]/geralds-produce-stand`.
 
+You can also skip the Apache steps and run a local server just for testing. Navigate to the project directory, then run:
+```
+php -S localhost:8000
+```
+Then point a webbrowser to localhost:8000 and view the page.
+
 ### Uninstallation
 
 Simply run `uninstall.sql` in the installation directory (make sure the information in it matches the other configuration files). That will delete the database and user from your server. From there you can delete the repository and that should do it!
