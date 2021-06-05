@@ -9,7 +9,7 @@ I wrote this application by hand. All the HTML/CSS/PHP is my own. I thought that
 
 If I were to continue this project, I would seriously consider migrating to an established web framework like Django or React. In addition, I think the styling could be updated to look more "modern". Also there are a few violations of the DRY principle that could easily be fixed (the page headers and navbars).  
 
-Overall, I am very proud of the work and effort I have put forth here, and I hope it comes through!
+Overall, I am very proud of the work and effort I have put forth here, and I hope it shows!
 
 ### Installation
 
