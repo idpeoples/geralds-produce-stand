@@ -3,6 +3,14 @@ Live Site: https://ianpeoples.dev/geralds-produce-stand/
 
 A small web application that tracks the stock of various produce. Built using MySQL/Mariadb, Python 3, and PHP 7.
 
+## Table of Contents:
+[Top](#geralds-produce-stand)  
+[Commentary](#commentary)  
+[Installation](#installation)  
+[Running Locally](#running-locally)  
+[Uninstallation](#uninstallation)  
+[Linting](#linting)
+
 ### Commentary
 
 I wrote this application by hand. All the HTML/CSS/PHP is my own. I thought that might be quicker since it is such a (seemingly) simple application, and also easier to distribute. It turns out web frameworks exist for a reason. That being said, I learned a lot and really enjoyed making this. There were a lot of small tricks I learned (see the comments) that I will carry into future projects (and update old ones using them!).  
